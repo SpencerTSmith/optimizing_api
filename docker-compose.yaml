@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   app:
-    container_name: app
+    container_name: team7_app
     build: .
     ports:
       - '8000:8000'
@@ -11,7 +11,7 @@ services:
     env_file:
       - .env.dev
   db:
-    container_name: db
+    container_name: team7_db
     image: postgres:16-alpine
     ports:
       - '5432:5432'
@@ -20,7 +20,7 @@ services:
     env_file: 
       - .env.dev
   test-db:
-    container_name: test-db
+    container_name: team7_test-db
     image: postgres:16-alpine
     ports:
       - '5433:5432'
