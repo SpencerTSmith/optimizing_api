@@ -183,6 +183,12 @@ and navigate to cloned project
 
 build and run project:
 
+
+docker compose -p team_7_{member_name} --env-file .env  --build -d
+
+
+
+
 ```bash
 # this command will build docker image, up container in detached mode and run db initialization scripts
 make dev
@@ -192,6 +198,7 @@ you can also re-build container
 ```bash
 make install
 ```
+
 
 alternatively if you don't have make installed you can use directly docker commands:
 ```bash
