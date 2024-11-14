@@ -34,5 +34,4 @@ volumes:
     driver: local
 networks:
   mynetwork:
-    driver: overlay
     attachable: true
